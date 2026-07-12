@@ -1,0 +1,83 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="FinTech Payments Platform Architecture">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f1a30"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#14877c"/>
+      <stop offset="100%" stop-color="#1fb8a8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+
+  <!-- subtle grid dots -->
+  <g opacity="0.12">
+    <circle cx="60" cy="40" r="2" fill="#ffffff"/>
+    <circle cx="120" cy="40" r="2" fill="#ffffff"/>
+    <circle cx="60" cy="80" r="2" fill="#ffffff"/>
+    <circle cx="1140" cy="260" r="2" fill="#ffffff"/>
+    <circle cx="1080" cy="260" r="2" fill="#ffffff"/>
+    <circle cx="1140" cy="220" r="2" fill="#ffffff"/>
+  </g>
+
+  <!-- schematic nodes suggesting service mesh, right side -->
+  <g opacity="0.55" stroke="#1fb8a8" stroke-width="1.5" fill="none">
+    <rect x="930" y="60" width="70" height="34" rx="6"/>
+    <rect x="1030" y="60" width="70" height="34" rx="6"/>
+    <rect x="980" y="130" width="70" height="34" rx="6"/>
+    <rect x="930" y="200" width="70" height="34" rx="6"/>
+    <rect x="1030" y="200" width="70" height="34" rx="6"/>
+    <path d="M965 94 L1000 130" />
+    <path d="M1065 94 L1015 130" />
+    <path d="M1000 164 L965 200" />
+    <path d="M1015 164 L1065 200" />
+  </g>
+  <g fill="#1fb8a8">
+    <circle cx="965" cy="77" r="3"/>
+    <circle cx="1065" cy="77" r="3"/>
+    <circle cx="1015" cy="147" r="3"/>
+    <circle cx="965" cy="217" r="3"/>
+    <circle cx="1065" cy="217" r="3"/>
+  </g>
+
+  <rect x="60" y="52" width="120" height="4" fill="url(#accent)"/>
+
+  <text x="60" y="120" font-family="Georgia, 'Times New Roman', serif" font-size="46" fill="#f4f6f8" font-weight="700">
+    FinTech Payments Platform
+  </text>
+  <text x="60" y="164" font-family="Georgia, 'Times New Roman', serif" font-size="46" fill="#f4f6f8" font-weight="700">
+    Architecture
+  </text>
+
+  <text x="60" y="200" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#9fb0c9">
+    A production-shaped reference architecture on AWS EKS — services, event backbone,
+  </text>
+  <text x="60" y="224" font-family="Helvetica, Arial, sans-serif" font-size="18" fill="#9fb0c9">
+    failure handling, and the tradeoffs behind every major decision.
+  </text>
+
+  <g font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#0f1a30" font-weight="600">
+    <rect x="60" y="248" width="88" height="26" rx="13" fill="#1fb8a8"/>
+    <text x="104" y="265" text-anchor="middle">EKS</text>
+
+    <rect x="156" y="248" width="80" height="26" rx="13" fill="#1fb8a8"/>
+    <text x="196" y="265" text-anchor="middle">Istio</text>
+
+    <rect x="244" y="248" width="112" height="26" rx="13" fill="#1fb8a8"/>
+    <text x="300" y="265" text-anchor="middle">Kafka (MSK)</text>
+
+    <rect x="364" y="248" width="98" height="26" rx="13" fill="#1fb8a8"/>
+    <text x="413" y="265" text-anchor="middle">ArgoCD</text>
+
+    <rect x="470" y="248" width="76" height="26" rx="13" fill="#1fb8a8"/>
+    <text x="508" y="265" text-anchor="middle">OPA</text>
+
+    <rect x="554" y="248" width="86" height="26" rx="13" fill="#1fb8a8"/>
+    <text x="597" y="265" text-anchor="middle">Falco</text>
+
+    <rect x="648" y="248" width="150" height="26" rx="13" fill="#1fb8a8"/>
+    <text x="723" y="265" text-anchor="middle">Terraform</text>
+  </g>
+</svg>
